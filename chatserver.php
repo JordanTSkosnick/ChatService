@@ -37,7 +37,7 @@ elseif (isset($_GET['log'])){
   $query = "SELECT *, user AS username FROM logs WHERE room = '$log'";
   $result = $db->query($query);
   $records = $result->fetchall();
-  //json encodes the result and echoes it.
+  //json encodes the result and echoes it
   echo json_encode($records);
 }
 
